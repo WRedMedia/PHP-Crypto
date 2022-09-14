@@ -22,7 +22,7 @@
         "psr-4": {
             "TronTool\\": "tron.php/src/"
         }
-    }   
+    },
 
     "config": {
         "sort-packages": true
