@@ -1,15 +1,33 @@
 {
-    "require": {
-        "php": "^7.1",
-        "guzzlehttp/guzzle": "^6.3",
-        "kornrunner/secp256k1": "^0.1.2",
-        "sc0vu/web3.php": "^0.1.4",
-        "simplito/elliptic-php": "^1.0"
+    "name": "wredmedia/php-tron",
+    "description": "A PHP API for interacting with Tron (Trx)",
+    "license": "MIT",
+    "type":   "library",
+    "homepage": "https://github.com/WRedMedia/PHP-Tron-develop",
+    "authors": [
+        {
+            "name": "WR",
+            "email": "info@w-red.com"
+        }
+    ],
 
+    "require": {
+        "php": ">=7.4",
+        "guzzlehttp/guzzle": "^7.0",
+        "kornrunner/secp256k1": "^0.1.2",
+        "wredmedia/web3.php": "*",
+        "simplito/elliptic-php": "^1.0",
     },
     "autoload": {
         "psr-4": {
             "TronTool\\": "tron.php/src/"
         }
-    }      
+    }   
+
+    "config": {
+        "sort-packages": true
+    },
+
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }
