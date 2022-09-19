@@ -1,6 +1,6 @@
 <?php
 
-namespace BitcoinTool;
+namespace TronTool;
 
 use Exception;
 use Illuminate\Support\Facades\Http;
@@ -10,14 +10,19 @@ class NodeClient
 {
     protected $client;
 
-    static function mainNet()
-    {
-        return new self('http://127.0.0.1:8332');
-    }
-
     function __construct($uri)
     {
         $this->client = Http::baseUrl($uri);
+    }
+
+    static function mainNet()
+    {
+        return new self('http://127.0.0.1:8090');
+    }
+
+    static function testNet()
+    {
+        return new self('https://api.shasta.trongrid.io');
     }
 
     /**
@@ -25,6 +30,10 @@ class NodeClient
      */
     function post($api, $payload = [])
     {
+//        $opts = [
+//            'json' => $payload
+//        ];
+
         try {
             $rsp = $this->client->post($api, $payload);
             if ($rsp->successful()) {
@@ -41,6 +50,9 @@ class NodeClient
      */
     function get($api, $query = [])
     {
+//        $opts = [
+//            'query' => $query
+//        ];
         try {
             $rsp = $this->client->get($api, $query);
             if ($rsp->successful()) {
@@ -55,5 +67,10 @@ class NodeClient
     function handle($rsp)
     {
         return json_decode($rsp->getBody());
+    }
+
+    function version()
+    {
+        return '1.0.0';
     }
 }
