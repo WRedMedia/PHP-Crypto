@@ -1,6 +1,6 @@
 <?php
 
-namespace TronTool;
+namespace CryptoTool;
 
 class Trc20 extends Contract
 {
