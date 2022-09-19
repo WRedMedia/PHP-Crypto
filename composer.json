@@ -1,6 +1,6 @@
 {
-    "name": "wredmedia/php-tron",
-    "description": "A PHP API for interacting with Tron (Trx)",
+    "name": "wredmedia/php-crypto",
+    "description": "A PHP API for interacting with Cryptocurrencies",
     "license": "MIT",
     "type":   "library",
     "homepage": "https://github.com/WRedMedia/PHP-Tron-develop",
