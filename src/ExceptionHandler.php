@@ -1,5 +1,5 @@
 <?php
-namespace TronTool;
+namespace CryptoTool;
 
 class ExceptionHandler{
   function __construct(){
