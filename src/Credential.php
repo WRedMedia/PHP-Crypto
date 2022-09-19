@@ -1,5 +1,5 @@
 <?php
-namespace TronTool;
+namespace CryptoTool;
 
 use Elliptic\EC;
 
