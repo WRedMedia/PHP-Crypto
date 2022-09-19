@@ -3,7 +3,7 @@
     "description": "A PHP API for interacting with Cryptocurrencies",
     "license": "MIT",
     "type":   "library",
-    "homepage": "https://github.com/WRedMedia/PHP-Tron-develop",
+    "homepage": "https://github.com/WRedMedia/PHP-Crypto",
     "authors": [
         {
             "name": "WR",
@@ -20,7 +20,7 @@
     },
     "autoload": {
         "psr-4": {
-            "TronTool\\": "tron.php/src/"
+            "TronTool\\": "Crypto/src/"
         }
     },
 
