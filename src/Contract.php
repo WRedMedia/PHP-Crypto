@@ -1,6 +1,6 @@
 <?php
 
-namespace TronTool;
+namespace CryptoTool;
 
 use Exception;
 use InvalidArgumentException;
